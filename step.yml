@@ -1,0 +1,29 @@
+name: gzip
+version: 0.0.1
+summary: |
+  Recursively compress files with a specific extension using gzip.
+tags:
+  - gzip
+  - compress
+  - compression
+
+properties:
+  - name: compression-level
+    type: string
+    required: false
+    default: 9
+
+  - name: file-extensions
+    type: string
+    required: false
+    default: ico js css xml xsd xsl svg htm html txt
+
+  - name: follow-symlinks
+    type: bool
+    required: false
+    default: true
+
+  - name: output-extension
+    type: string
+    required: false
+    default: .gzip
